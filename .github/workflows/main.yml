@@ -26,8 +26,8 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws configure set aws_access_key_id ${{ ASIAXPLL76VMUIYJS2IC }}
-          aws configure set aws_secret_access_key ${{ YMXkr0gqIkevtBjwJOmmclVGvcfb3xJXTBcieNDX }}
+          aws configure set aws_access_key_id ${{ASIAXPLL76VMUIYJS2IC}}
+          aws configure set aws_secret_access_key ${{YMXkr0gqIkevtBjwJOmmclVGvcfb3xJXTBcieNDX}}
           aws s3 sync ./build s3://chat-anwendung--bucket
 
 
